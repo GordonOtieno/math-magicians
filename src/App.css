@@ -1,39 +1,78 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-size: 2rem;
+  border: 1px solid rgb(252, 252, 252);
+  cursor: pointer;
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.operations button {
+  background-color: orange;
+  width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.digits button {
+  background-color: #efefef;
+  flex: 1 0 26%;
+  padding: 30px;
+}
+
+/* All things Grid, Flexbox, Box Alignment */
+.subgrid {
+  display: grid;
+}
+
+.wrapper {
+  grid-template-areas:
+    "total total total total"
+    "modif modif modif oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper";
+  grid-auto-columns: 1fr;
+  max-width: 700px;
+  min-height: 60vh;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+}
+
+.show-input {
+  grid-area: total;
+  background-color: rgb(218, 207, 207);
+  height: 100px;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1rem;
+  width: 89.4%;
+  margin-bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.calcInput {
+  position: absolute;
+  right: 20px;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.operations {
+  grid-area: oper;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.digits {
+  grid-area: digit;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modifiers {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
