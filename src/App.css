@@ -8,7 +8,7 @@ button {
   font-size: 2rem;
   border: 1px solid rgb(252, 252, 252);
   cursor: pointer;
-  padding: 10px;
+  padding: 15px;
 }
 
 .operations button {
@@ -19,6 +19,7 @@ button {
 .digits button {
   background-color: #efefef;
   flex: 1 0 26%;
+  padding: 30px;
 }
 
 /* All things Grid, Flexbox, Box Alignment */
@@ -52,6 +53,7 @@ button {
   align-items: center;
   font-size: 1rem;
   width: 89.4%;
+  margin-bottom: 0;
 }
 
 .calcInput {
