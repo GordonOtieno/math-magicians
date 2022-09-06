@@ -1,8 +1,10 @@
+
 function App() {
   return (
-    <div>
-      hello from app
+    <div className="App">
+      this is appp
     </div>
   );
 }
+
 export default App;
