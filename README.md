@@ -11,10 +11,10 @@
 - `HTML` ,`CSS` and `JavaScript`
 - Technologies used: `GitHub`
 - Frameworks: `reactjs`                                                                                                                                    
-<!-- 
+
 ## Live Demo
-Live site URL to Webpack basic setup
-[Live Demo Link](https://samlorlah.github.io/math-magicians/) -->
+Live site URL to math magicians
+[Live Demo Link](https://gordonotieno.github.io/math-magicians/) 
 
 ### Prerequisites
 
