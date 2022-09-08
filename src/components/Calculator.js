@@ -4,8 +4,8 @@ import Display from './Display';
 import ButtonPanel from './ButtonContainer';
 
 class Calculator extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       total: null,
       next: null,
