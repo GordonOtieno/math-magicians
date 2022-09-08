@@ -1,55 +1,30 @@
 import React from 'react';
+import Calculate from '../logic/calculate';
+import Display from './Display';
+import ButtonPanel from './ButtonContainer';
 
-import '../App.css';
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-class Calculator extends React.PureComponent {
+  handleClick(btnName) {
+    const { total, next, operation } = this.state;
+    this.setState(Calculate({ total, next, operation }, btnName));
+  }
+
   render() {
-    const calcButtons = [];
-    ['AC', '+/-', '%', 7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.'].forEach((item) => {
-      calcButtons.push(
-        <button
-          type="button"
-          value={item}
-          key={item}
-        >
-          {' '}
-          {item}
-        </button>,
-      );
-    });
+    const { total, next, operation } = this.state;
     return (
-      <div className="wrapper">
-        {' '}
-        <div className="show-input"><p className="calcInput">0</p></div>
-        <div className="digits flex">{calcButtons}</div>
-        <div className="operations subgrid">
-          <button type="button" value="+">
-            +
-          </button>
-
-          <button type="button" value="-">
-            {' '}
-            -
-            {' '}
-          </button>
-
-          <button type="button" value="*">
-            {' '}
-            *
-          </button>
-
-          <button value="/" type="button">
-            {' '}
-            /
-          </button>
-          {/* "=" btn */}
-          <button
-            type="button"
-            value="="
-          >
-            =
-          </button>
-        </div>
+      <div className="App common-width">
+        <Display total={total} operation={operation} next={next} />
+        <ButtonPanel handleClick={this.handleClick} />
       </div>
     );
   }

@@ -1,78 +1,61 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
-button {
-  font-size: 2rem;
-  border: 1px solid rgb(252, 252, 252);
-  cursor: pointer;
-  padding: 15px;
-}
-
-.operations button {
-  background-color: orange;
-  width: 100px;
-}
-
-.digits button {
-  background-color: #efefef;
-  flex: 1 0 26%;
-  padding: 30px;
-}
-
-/* All things Grid, Flexbox, Box Alignment */
-.subgrid {
-  display: grid;
-}
-
-.wrapper {
-  grid-template-areas:
-    "total total total total"
-    "modif modif modif oper"
-    "digit digit digit oper"
-    "digit digit digit oper"
-    "digit digit digit oper"
-    "digit digit digit oper";
-  grid-auto-columns: 1fr;
-  max-width: 700px;
-  min-height: 60vh;
-  margin: 0 auto;
-  margin-top: 100px;
-  display: grid;
-}
-
-.show-input {
-  grid-area: total;
-  background-color: rgb(218, 207, 207);
+.d {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: center;
+  background-color: gray;
   height: 100px;
-  position: relative;
+}
+
+.common-width {
+  width: 700px;
+}
+
+.result {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 1rem;
-  width: 89.4%;
-  margin-bottom: 0;
+  flex-direction: column-reverse;
+  color: white;
+  font-weight: bolder;
+  font-size: 38px;
+  padding: 5px;
+  margin-right: 1rem;
 }
 
-.calcInput {
-  position: absolute;
-  right: 20px;
-  font-size: 2rem;
+.bPanel-width {
+  width: 100%;
 }
 
-.operations {
-  grid-area: oper;
-}
-
-.digits {
-  grid-area: digit;
+.group1,
+.group2,
+.group3,
+.group4,
+.group5 {
+  height: 100px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.modifiers {
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+.w-50 {
+  width: 40%;
+}
+
+.w-25 {
+  width: 20%;
+}
+
+.bold-size {
+  font-size: 35px;
+  font-weight: 900;
+  border: 1px solid gray;
+}
+
+.focus:focus {
+  border: 1px solid white;
+  cursor: pointer;
 }
