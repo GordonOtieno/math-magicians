@@ -1,0 +1,19 @@
+.quoteWrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.newQuote {
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: rgb(190, 136, 35);
+  padding: 10px 100px;
+}
+
+.getQuote {
+  margin-top: 50px;
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: rgb(190, 136, 35);
+  border-radius: 5px;
+}

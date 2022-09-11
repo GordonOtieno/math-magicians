@@ -5,7 +5,7 @@
 - Make simple calculations.
 - Read a random math-related quote.
 ## ScreenShort
-![image](./public/Screenshot.png)
+![image](./public/Screen.png)
 ## Built With
 
 - `HTML` ,`CSS` and `JavaScript`

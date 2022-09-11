@@ -10,7 +10,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculatorPageContainer">
+    <div className="calculatorMain">
       <h2 className="calculatorTitle">It&apos;s Time For Maths!</h2>
       <div className="container">
         <div className="display">{state.next || state.total || 0}</div>

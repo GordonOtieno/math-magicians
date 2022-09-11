@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(128, 156, 211);
+  padding: 20px 100px;
+}
+
+.logo {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.link {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: rgb(241, 198, 79);
+}
