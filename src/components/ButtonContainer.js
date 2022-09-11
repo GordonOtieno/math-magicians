@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const ButtonPanel = (props) => {
   const btns = ['AC', '+/-', '%', '÷', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='];
   const { handleClick } = props;
-
   return (
     <div>
       <div className="buttons-container">

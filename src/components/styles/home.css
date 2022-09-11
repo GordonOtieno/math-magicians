@@ -1,0 +1,22 @@
+.homePageContainer {
+  text-align: center;
+}
+
+.math {
+  font-style: italic;
+  font-weight: 650;
+  color: rgb(136, 140, 143);
+}
+
+p {
+  font-size: 18px;
+}
+
+ul li {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+img {
+  height: 60vh;
+}

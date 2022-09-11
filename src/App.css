@@ -7,7 +7,7 @@
   width: auto;
   border: none;
   direction: rtl;
-  padding: 10px 8px;
+  padding: 20px 10px;
   background: gray;
   color: #fff;
   font-size: 2rem;
@@ -49,20 +49,19 @@ button:nth-child(19):hover {
 .buttons-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 500px;
+  height: 450px;
 }
 
-.calculatorPageContainer {
+.calculatorMain {
   margin: 100px auto 0 auto;
   padding: 20px 80px;
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  flex-direction: column;
+  width: 80%;
 }
 
 .container {
-  width: 600px;
+  width: 500px;
   height: 500px;
   border: #a09292 solid 1px;
 }
